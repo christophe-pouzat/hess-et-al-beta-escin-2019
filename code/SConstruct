@@ -1,0 +1,36 @@
+#!python
+env = Environment()
+env.Append(CCFLAGS = ['-g','-Wall','-std=gnu11'])
+env.StaticLibrary(target="abaa",source=["adu.c","adu_vector.c","illumination.c","dye.c","ccd.c","aba.c","ratio.c"])
+
+env.Program(target="adu_test",
+            source="adu_test.c",
+            LIBS=["hdf5","hdf5_hl","gsl","gslcblas","m"],LIBPATH=".")
+
+env.Program(target="adu_vector_test",
+            source="adu_vector_test.c",
+            LIBS=["hdf5","hdf5_hl","gsl","gslcblas","m"],LIBPATH=".")
+
+env.Program(target="dye_test",
+            source="dye_test.c",
+            LIBS=["hdf5","hdf5_hl","gsl","gslcblas","m"],LIBPATH=".")
+
+env.Program(target="illumination_test",
+            source="illumination_test.c",
+            LIBS=["hdf5","hdf5_hl","gsl","gslcblas","m"],LIBPATH=".")
+
+env.Program(target="ccd_test",
+            source="ccd_test.c",
+            LIBS=["hdf5","hdf5_hl","gsl","gslcblas","m"],LIBPATH=".")
+
+env.Program(target="aba_test",
+            source="aba_test.c",
+            LIBS=["hdf5","hdf5_hl","gsl","gslcblas","m"],LIBPATH=".")
+
+env.Program(target="ratio_test",
+            source="ratio_test.c",
+            LIBS=["hdf5","hdf5_hl","gsl","gslcblas","m"],LIBPATH=".")
+
+env.Program(target="ratio_test2",
+            source="ratio_test2.c",
+            LIBS=["abaa","hdf5","hdf5_hl","gsl","gslcblas","m"],LIBPATH=".")
