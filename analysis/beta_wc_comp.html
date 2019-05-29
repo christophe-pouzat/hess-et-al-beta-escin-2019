@@ -1,0 +1,210 @@
+<h1 id="summaries-for-the-beta-escin-and-whole-cell-data-sets">Summaries for the beta-escin and whole-cell data sets</h1>
+<div class="toc">
+<ul>
+<li><a href="#summaries-for-the-beta-escin-and-whole-cell-data-sets">Summaries for the beta-escin and whole-cell data sets</a><ul>
+<li><a href="#the-content-of-the-tables">The content of the tables</a></li>
+<li><a href="#analysis-summary-of-beta-escin-data-sets">Analysis summary of beta-escin data sets</a></li>
+<li><a href="#analysis-summary-of-whole-cell-data-sets">Analysis summary of whole-cell data sets</a></li>
+</ul>
+</li>
+<li><a href="#transients-numerical-summaries-of-the-beta-escin-data-sets">Transients numerical summaries of the beta-escin data sets</a><ul>
+<li><a href="#data-set-da_121219_e1-numerical-summary">Data set DA_121219_E1 numerical summary</a></li>
+<li><a href="#data-set-da_121219_e7-numerical-summary">Data set DA_121219_E7 numerical summary</a></li>
+<li><a href="#data-set-da_130128_e1-numerical-summary">Data set DA_130128_E1 numerical summary</a></li>
+<li><a href="#data-set-da_130128_e4-numerical-summary">Data set DA_130128_E4 numerical summary</a></li>
+<li><a href="#data-set-da_130130_e2-numerical-summary">Data set DA_130130_E2 numerical summary</a></li>
+<li><a href="#data-set-da_130130_e4-numerical-summary">Data set DA_130130_E4 numerical summary</a></li>
+<li><a href="#data-set-da_130201_e2-numerical-summary">Data set DA_130201_E2 numerical summary</a></li>
+<li><a href="#data-set-da_130514_e4-numerical-summary">Data set DA_130514_E4 numerical summary</a></li>
+<li><a href="#data-set-da_130514_e5-numerical-summary">Data set DA_130514_E5 numerical summary</a></li>
+<li><a href="#data-set-da_130523_e1-numerical-summary">Data set DA_130523_E1 numerical summary</a></li>
+<li><a href="#data-set-da_130524_e4-numerical-summary">Data set DA_130524_E4 numerical summary</a></li>
+<li><a href="#data-set-da_130524_e7-numerical-summary">Data set DA_130524_E7 numerical summary</a></li>
+<li><a href="#data-set-da_130531_e1-numerical-summary">Data set DA_130531_E1 numerical summary</a></li>
+<li><a href="#data-set-da_130531_e4-numerical-summary">Data set DA_130531_E4 numerical summary</a></li>
+<li><a href="#data-set-da_130606_e1-numerical-summary">Data set DA_130606_E1 numerical summary</a></li>
+<li><a href="#data-set-da_130619_e6-numerical-summary">Data set DA_130619_E6 numerical summary</a></li>
+</ul>
+</li>
+<li><a href="#transients-numerical-summaries-of-the-whole-cell-data-sets">Transients numerical summaries of the whole-cell data sets</a><ul>
+<li><a href="#data-set-da_120906_e1-numerical-summary">Data set DA_120906_E1 numerical summary</a></li>
+<li><a href="#data-set-da_120913_e7-numerical-summary">Data set DA_120913_E7 numerical summary</a></li>
+<li><a href="#data-set-da_121011_e2-numerical-summary">Data set DA_121011_E2 numerical summary</a></li>
+<li><a href="#data-set-da_121011_e3-numerical-summary">Data set DA_121011_E3 numerical summary</a></li>
+<li><a href="#data-set-da_121015_e1-numerical-summary">Data set DA_121015_E1 numerical summary</a></li>
+<li><a href="#data-set-da_121015_e3-numerical-summary">Data set DA_121015_E3 numerical summary</a></li>
+<li><a href="#data-set-da_121108_e1-numerical-summary">Data set DA_121108_E1 numerical summary</a></li>
+<li><a href="#data-set-da_121108_e3-numerical-summary">Data set DA_121108_E3 numerical summary</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="the-content-of-the-tables">The content of the tables</h2>
+<p>In the next two tables, the columns have the following meaning:</p>
+<ul>
+<li><strong>Data set</strong> gives the data set name.</li>
+<li><strong>used/total</strong> displays the number of 'good' transients over the total number of transients.</li>
+<li><strong>setting</strong> is the [Fura] concentration choice (among 'min', 'mean' and 'max') that yielded the best straight line fit.</li>
+<li><strong>RSS</strong> is the residual sum of squares of the best fit (its magnitude depends on the number of 'good' transients in the dataset).</li>
+<li><strong>Prob</strong> is the probability for the RSS to <em>exceed</em> the observed value under the null hypothesis.</li>
+<li><strong>99% CI</strong> is the 99% confidence interval for the endogenous kappa (kappa_s) obtained with a bootstrap simulation.</li>
+</ul>
+<p><strong>Warning</strong> if the data set yieleded less than 3 'good' transients, no straight line fit was performed (it would have been meaningless) and 'NA' (Not Available) appears in the last 4 columns of the table.</p>
+<h2 id="analysis-summary-of-beta-escin-data-sets">Analysis summary of beta-escin data sets</h2>
+<p><strong>tau vs kappa(Fura) straight line regression summary</strong></p>
+<pre><code>        Data set         |  used/total  |  setting  |   RSS   |  Prob   |         99% CI          
+
+       DA_121219_E1             3/3          min       3.15      0.08           [102,269]         
+       DA_121219_E7             4/4          max      11.45      0.00            [39,138]         
+       DA_130128_E1             5/5          max       8.50      0.04            [-8,62]          
+       DA_130128_E4             4/5          max      19.01      0.00           [105,591]         
+       DA_130130_E2             5/5         mean      22.21      0.00             [1,94]          
+       DA_130130_E4             5/5          min      12.48      0.01            [23,106]         
+       DA_130201_E2             4/4          min      60.89      0.00            [19,97]          
+       DA_130514_E4             5/5          min      29.90      0.00            [39,118]         
+       DA_130514_E5             4/4         mean       7.73      0.02            [5,181]          
+       DA_130523_E1             4/5          min       6.18      0.05            [35,480]         
+       DA_130524_E4             5/5          min       0.49      0.92            [85,237]         
+       DA_130524_E7             4/5          max       1.05      0.59            [65,402]         
+       DA_130531_E1             5/5          max       6.52      0.09            [46,260]         
+       DA_130531_E4             3/4         mean       0.05      0.83           [-28,301]         
+       DA_130606_E1             2/4           NA         NA        NA                NA            
+       DA_130619_E6             5/5          max       3.43      0.33           [158,559]         
+</code></pre>
+
+<h2 id="analysis-summary-of-whole-cell-data-sets">Analysis summary of whole-cell data sets</h2>
+<p><strong>tau vs kappa(Fura) straight line regression summary</strong></p>
+<pre><code>        Data set         |  used/total  |  setting  |   RSS   |  Prob   |         99% CI          
+
+       DA_120906_E1             3/4          max      15.50      0.00           [-76,-67]         
+       DA_120913_E7             3/4          min       0.00      0.99            [-26,29]         
+       DA_121011_E2             2/4           NA         NA        NA                NA            
+       DA_121011_E3             3/4          max      21.85      0.00           [-38,-14]         
+       DA_121015_E1             4/4          max      63.22      0.00           [-70,-52]         
+       DA_121015_E3             4/4          min      276.16     0.00           [-42,-15]         
+       DA_121108_E1             3/4          max      16.09      0.00           [-31,155]         
+       DA_121108_E3             2/4           NA         NA        NA                NA            
+</code></pre>
+
+<h1 id="transients-numerical-summaries-of-the-beta-escin-data-sets">Transients numerical summaries of the beta-escin data sets</h1>
+<h2 id="data-set-da_121219_e1-numerical-summary">Data set DA_121219_E1 numerical summary</h2>
+<p>The full report with figures is located at <a href="DA-beta/DA_121219_E1_analysis/DA_121219_E1_report.html">DA_121219_E1_report</a>.</p>
+<p>This data set contains 3 transients, 3 of which were 'good' enough for the tau vs kappa fit.</p>
+<p>The RSS per degree of freedom were (values in '()' correspond to 'bad' transients): 0.730, 0.903, 0.964.</p>
+<p>The lag 1 residual autocorrelation coefficient were (values in '()' correspond to 'bad' transients): 0.022, -0.032, 0.058.</p>
+<h2 id="data-set-da_121219_e7-numerical-summary">Data set DA_121219_E7 numerical summary</h2>
+<p>The full report with figures is located at <a href="DA-beta/DA_121219_E7_analysis/DA_121219_E7_report.html">DA_121219_E7_report</a>.</p>
+<p>This data set contains 4 transients, 4 of which were 'good' enough for the tau vs kappa fit.</p>
+<p>The RSS per degree of freedom were (values in '()' correspond to 'bad' transients): 1.092, 0.943, 0.912, 1.092.</p>
+<p>The lag 1 residual autocorrelation coefficient were (values in '()' correspond to 'bad' transients): -0.017, 0.058, 0.023, -0.089.</p>
+<h2 id="data-set-da_130128_e1-numerical-summary">Data set DA_130128_E1 numerical summary</h2>
+<p>The full report with figures is located at <a href="DA-beta/DA_130128_E1_analysis/DA_130128_E1_report.html">DA_130128_E1_report</a>.</p>
+<p>This data set contains 5 transients, 5 of which were 'good' enough for the tau vs kappa fit.</p>
+<p>The RSS per degree of freedom were (values in '()' correspond to 'bad' transients): 0.944, 1.047, 1.103, 0.880, 1.256.</p>
+<p>The lag 1 residual autocorrelation coefficient were (values in '()' correspond to 'bad' transients): 0.033, 0.019, 0.156, -0.116, 0.089.</p>
+<h2 id="data-set-da_130128_e4-numerical-summary">Data set DA_130128_E4 numerical summary</h2>
+<p>The full report with figures is located at <a href="DA-beta/DA_130128_E4_analysis/DA_130128_E4_report.html">DA_130128_E4_report</a>.</p>
+<p>This data set contains 5 transients, 4 of which were 'good' enough for the tau vs kappa fit.</p>
+<p>The RSS per degree of freedom were (values in '()' correspond to 'bad' transients): 1.068, 1.070, 1.116, 1.089, (1.281).</p>
+<p>The lag 1 residual autocorrelation coefficient were (values in '()' correspond to 'bad' transients): -0.045, 0.087, 0.116, 0.063, (0.121).</p>
+<h2 id="data-set-da_130130_e2-numerical-summary">Data set DA_130130_E2 numerical summary</h2>
+<p>The full report with figures is located at <a href="DA-beta/DA_130130_E2_analysis/DA_130130_E2_report.html">DA_130130_E2_report</a>.</p>
+<p>This data set contains 5 transients, 5 of which were 'good' enough for the tau vs kappa fit.</p>
+<p>The RSS per degree of freedom were (values in '()' correspond to 'bad' transients): 1.063, 0.991, 1.182, 0.841, 0.998.</p>
+<p>The lag 1 residual autocorrelation coefficient were (values in '()' correspond to 'bad' transients): 0.064, -0.024, 0.022, -0.047, 0.076.</p>
+<h2 id="data-set-da_130130_e4-numerical-summary">Data set DA_130130_E4 numerical summary</h2>
+<p>The full report with figures is located at <a href="DA-beta/DA_130130_E4_analysis/DA_130130_E4_report.html">DA_130130_E4_report</a>.</p>
+<p>This data set contains 5 transients, 5 of which were 'good' enough for the tau vs kappa fit.</p>
+<p>The RSS per degree of freedom were (values in '()' correspond to 'bad' transients): 0.918, 0.970, 1.117, 0.898, 0.951.</p>
+<p>The lag 1 residual autocorrelation coefficient were (values in '()' correspond to 'bad' transients): -0.027, 0.054, -0.066, 0.041, -0.137.</p>
+<h2 id="data-set-da_130201_e2-numerical-summary">Data set DA_130201_E2 numerical summary</h2>
+<p>The full report with figures is located at <a href="DA-beta/DA_130201_E2_analysis/DA_130201_E2_report.html">DA_130201_E2_report</a>.</p>
+<p>This data set contains 4 transients, 4 of which were 'good' enough for the tau vs kappa fit.</p>
+<p>The RSS per degree of freedom were (values in '()' correspond to 'bad' transients): 0.855, 0.974, 1.022, 0.986.</p>
+<p>The lag 1 residual autocorrelation coefficient were (values in '()' correspond to 'bad' transients): 0.113, -0.044, -0.143, 0.161.</p>
+<h2 id="data-set-da_130514_e4-numerical-summary">Data set DA_130514_E4 numerical summary</h2>
+<p>The full report with figures is located at <a href="DA-beta/DA_130514_E4_analysis/DA_130514_E4_report.html">DA_130514_E4_report</a>.</p>
+<p>This data set contains 5 transients, 5 of which were 'good' enough for the tau vs kappa fit.</p>
+<p>The RSS per degree of freedom were (values in '()' correspond to 'bad' transients): 0.698, 1.099, 1.101, 0.953, 1.122.</p>
+<p>The lag 1 residual autocorrelation coefficient were (values in '()' correspond to 'bad' transients): 0.092, 0.126, -0.106, 0.082, 0.144.</p>
+<h2 id="data-set-da_130514_e5-numerical-summary">Data set DA_130514_E5 numerical summary</h2>
+<p>The full report with figures is located at <a href="DA-beta/DA_130514_E5_analysis/DA_130514_E5_report.html">DA_130514_E5_report</a>.</p>
+<p>This data set contains 4 transients, 4 of which were 'good' enough for the tau vs kappa fit.</p>
+<p>The RSS per degree of freedom were (values in '()' correspond to 'bad' transients): 0.983, 0.962, 0.966, 1.057.</p>
+<p>The lag 1 residual autocorrelation coefficient were (values in '()' correspond to 'bad' transients): 0.131, 0.166, -0.017, -0.144.</p>
+<h2 id="data-set-da_130523_e1-numerical-summary">Data set DA_130523_E1 numerical summary</h2>
+<p>The full report with figures is located at <a href="DA-beta/DA_130523_E1_analysis/DA_130523_E1_report.html">DA_130523_E1_report</a>.</p>
+<p>This data set contains 5 transients, 4 of which were 'good' enough for the tau vs kappa fit.</p>
+<p>The RSS per degree of freedom were (values in '()' correspond to 'bad' transients): 1.049, (inf), 0.975, 1.085, 1.003.</p>
+<p>The lag 1 residual autocorrelation coefficient were (values in '()' correspond to 'bad' transients): -0.057, (inf), 0.095, -0.045, -0.033.</p>
+<h2 id="data-set-da_130524_e4-numerical-summary">Data set DA_130524_E4 numerical summary</h2>
+<p>The full report with figures is located at <a href="DA-beta/DA_130524_E4_analysis/DA_130524_E4_report.html">DA_130524_E4_report</a>.</p>
+<p>This data set contains 5 transients, 5 of which were 'good' enough for the tau vs kappa fit.</p>
+<p>The RSS per degree of freedom were (values in '()' correspond to 'bad' transients): 0.949, 0.935, 1.019, 0.907, 1.020.</p>
+<p>The lag 1 residual autocorrelation coefficient were (values in '()' correspond to 'bad' transients): -0.016, -0.106, -0.028, 0.058, -0.005.</p>
+<h2 id="data-set-da_130524_e7-numerical-summary">Data set DA_130524_E7 numerical summary</h2>
+<p>The full report with figures is located at <a href="DA-beta/DA_130524_E7_analysis/DA_130524_E7_report.html">DA_130524_E7_report</a>.</p>
+<p>This data set contains 5 transients, 4 of which were 'good' enough for the tau vs kappa fit.</p>
+<p>The RSS per degree of freedom were (values in '()' correspond to 'bad' transients): 0.889, (1.716), 0.992, 1.019, 0.937.</p>
+<p>The lag 1 residual autocorrelation coefficient were (values in '()' correspond to 'bad' transients): 0.129, (0.715), 0.014, 0.093, -0.139.</p>
+<h2 id="data-set-da_130531_e1-numerical-summary">Data set DA_130531_E1 numerical summary</h2>
+<p>The full report with figures is located at <a href="DA-beta/DA_130531_E1_analysis/DA_130531_E1_report.html">DA_130531_E1_report</a>.</p>
+<p>This data set contains 5 transients, 5 of which were 'good' enough for the tau vs kappa fit.</p>
+<p>The RSS per degree of freedom were (values in '()' correspond to 'bad' transients): 1.072, 1.189, 1.129, 1.032, 0.934.</p>
+<p>The lag 1 residual autocorrelation coefficient were (values in '()' correspond to 'bad' transients): 0.119, 0.153, 0.029, 0.118, -0.020.</p>
+<h2 id="data-set-da_130531_e4-numerical-summary">Data set DA_130531_E4 numerical summary</h2>
+<p>The full report with figures is located at <a href="DA-beta/DA_130531_E4_analysis/DA_130531_E4_report.html">DA_130531_E4_report</a>.</p>
+<p>This data set contains 4 transients, 3 of which were 'good' enough for the tau vs kappa fit.</p>
+<p>The RSS per degree of freedom were (values in '()' correspond to 'bad' transients): 1.105, 1.168, 1.184, (1.323).</p>
+<p>The lag 1 residual autocorrelation coefficient were (values in '()' correspond to 'bad' transients): -0.004, 0.069, -0.071, (0.143).</p>
+<h2 id="data-set-da_130606_e1-numerical-summary">Data set DA_130606_E1 numerical summary</h2>
+<p>The full report with figures is located at <a href="DA-beta/DA_130606_E1_analysis/DA_130606_E1_report.html">DA_130606_E1_report</a>.</p>
+<p>This data set contains 4 transients, 2 of which were 'good' enough for the tau vs kappa fit.</p>
+<p>The RSS per degree of freedom were (values in '()' correspond to 'bad' transients): (1.317), 1.053, 1.060, 1.218.</p>
+<p>The lag 1 residual autocorrelation coefficient were (values in '()' correspond to 'bad' transients): (0.014), 0.062, -0.031, 0.273.</p>
+<h2 id="data-set-da_130619_e6-numerical-summary">Data set DA_130619_E6 numerical summary</h2>
+<p>The full report with figures is located at <a href="DA-beta/DA_130619_E6_analysis/DA_130619_E6_report.html">DA_130619_E6_report</a>.</p>
+<p>This data set contains 5 transients, 5 of which were 'good' enough for the tau vs kappa fit.</p>
+<p>The RSS per degree of freedom were (values in '()' correspond to 'bad' transients): 1.079, 0.939, 1.000, 1.030, 1.164.</p>
+<p>The lag 1 residual autocorrelation coefficient were (values in '()' correspond to 'bad' transients): 0.071, -0.022, -0.024, -0.015, 0.009.</p>
+<h1 id="transients-numerical-summaries-of-the-whole-cell-data-sets">Transients numerical summaries of the whole-cell data sets</h1>
+<h2 id="data-set-da_120906_e1-numerical-summary">Data set DA_120906_E1 numerical summary</h2>
+<p>The full report with figures is located at <a href="DA-wc/DA_120906_E1_analysis/DA_120906_E1_report.html">DA_120906_E1_report</a>.</p>
+<p>This data set contains 4 transients, 3 of which were 'good' enough for the tau vs kappa fit.</p>
+<p>The RSS per degree of freedom were (values in '()' correspond to 'bad' transients): 1.108, (1.320), 1.108, 1.036.</p>
+<p>The lag 1 residual autocorrelation coefficient were (values in '()' correspond to 'bad' transients): -0.026, (0.117), 0.011, 0.076.</p>
+<h2 id="data-set-da_120913_e7-numerical-summary">Data set DA_120913_E7 numerical summary</h2>
+<p>The full report with figures is located at <a href="DA-wc/DA_120913_E7_analysis/DA_120913_E7_report.html">DA_120913_E7_report</a>.</p>
+<p>This data set contains 4 transients, 3 of which were 'good' enough for the tau vs kappa fit.</p>
+<p>The RSS per degree of freedom were (values in '()' correspond to 'bad' transients): 1.009, 1.251, 1.186, 1.201.</p>
+<p>The lag 1 residual autocorrelation coefficient were (values in '()' correspond to 'bad' transients): 0.113, 0.226, 0.047, 0.396.</p>
+<h2 id="data-set-da_121011_e2-numerical-summary">Data set DA_121011_E2 numerical summary</h2>
+<p>The full report with figures is located at <a href="DA-wc/DA_121011_E2_analysis/DA_121011_E2_report.html">DA_121011_E2_report</a>.</p>
+<p>This data set contains 4 transients, 2 of which were 'good' enough for the tau vs kappa fit.</p>
+<p>The RSS per degree of freedom were (values in '()' correspond to 'bad' transients): (2.329), 1.162, 1.112, (1.719).</p>
+<p>The lag 1 residual autocorrelation coefficient were (values in '()' correspond to 'bad' transients): (1.159), 0.150, -0.004, (0.741).</p>
+<h2 id="data-set-da_121011_e3-numerical-summary">Data set DA_121011_E3 numerical summary</h2>
+<p>The full report with figures is located at <a href="DA-wc/DA_121011_E3_analysis/DA_121011_E3_report.html">DA_121011_E3_report</a>.</p>
+<p>This data set contains 4 transients, 3 of which were 'good' enough for the tau vs kappa fit.</p>
+<p>The RSS per degree of freedom were (values in '()' correspond to 'bad' transients): 1.150, 1.071, 1.101, (3.069).</p>
+<p>The lag 1 residual autocorrelation coefficient were (values in '()' correspond to 'bad' transients): 0.147, 0.056, 0.060, (1.759).</p>
+<h2 id="data-set-da_121015_e1-numerical-summary">Data set DA_121015_E1 numerical summary</h2>
+<p>The full report with figures is located at <a href="DA-wc/DA_121015_E1_analysis/DA_121015_E1_report.html">DA_121015_E1_report</a>.</p>
+<p>This data set contains 4 transients, 4 of which were 'good' enough for the tau vs kappa fit.</p>
+<p>The RSS per degree of freedom were (values in '()' correspond to 'bad' transients): 0.982, 0.897, 0.955, 0.825.</p>
+<p>The lag 1 residual autocorrelation coefficient were (values in '()' correspond to 'bad' transients): -0.024, 0.087, 0.081, -0.088.</p>
+<h2 id="data-set-da_121015_e3-numerical-summary">Data set DA_121015_E3 numerical summary</h2>
+<p>The full report with figures is located at <a href="DA-wc/DA_121015_E3_analysis/DA_121015_E3_report.html">DA_121015_E3_report</a>.</p>
+<p>This data set contains 4 transients, 4 of which were 'good' enough for the tau vs kappa fit.</p>
+<p>The RSS per degree of freedom were (values in '()' correspond to 'bad' transients): 0.944, 0.992, 0.880, 0.880.</p>
+<p>The lag 1 residual autocorrelation coefficient were (values in '()' correspond to 'bad' transients): -0.010, 0.075, -0.087, -0.008.</p>
+<h2 id="data-set-da_121108_e1-numerical-summary">Data set DA_121108_E1 numerical summary</h2>
+<p>The full report with figures is located at <a href="DA-wc/DA_121108_E1_analysis/DA_121108_E1_report.html">DA_121108_E1_report</a>.</p>
+<p>This data set contains 4 transients, 3 of which were 'good' enough for the tau vs kappa fit.</p>
+<p>The RSS per degree of freedom were (values in '()' correspond to 'bad' transients): 0.936, 1.052, 0.963, (1.492).</p>
+<p>The lag 1 residual autocorrelation coefficient were (values in '()' correspond to 'bad' transients): 0.048, -0.072, 0.025, (0.297).</p>
+<h2 id="data-set-da_121108_e3-numerical-summary">Data set DA_121108_E3 numerical summary</h2>
+<p>The full report with figures is located at <a href="DA-wc/DA_121108_E3_analysis/DA_121108_E3_report.html">DA_121108_E3_report</a>.</p>
+<p>This data set contains 4 transients, 2 of which were 'good' enough for the tau vs kappa fit.</p>
+<p>The RSS per degree of freedom were (values in '()' correspond to 'bad' transients): 1.046, 1.099, (1.516), (1.294).</p>
+<p>The lag 1 residual autocorrelation coefficient were (values in '()' correspond to 'bad' transients): -0.041, 0.027, (0.514), (0.271).</p>

@@ -1,0 +1,229 @@
+<h2 id="analysis-of-dataset-da_130524_e7"><em>Analysis of dataset DA_130524_E7</em></h2>
+<div class="toc">
+<ul>
+<li><a href="#analysis-of-dataset-da_130524_e7">Analysis of dataset DA_130524_E7</a></li>
+<li><a href="#loading-curve">Loading curve</a></li>
+<li><a href="#transients">Transients</a><ul>
+<li><a href="#transient-1">Transient 1</a><ul>
+<li><a href="#fit-graphical-summary">Fit graphical summary</a></li>
+<li><a href="#fit-numerical-summary">Fit numerical summary</a></li>
+</ul>
+</li>
+<li><a href="#transient-2">Transient 2</a><ul>
+<li><a href="#fit-graphical-summary_1">Fit graphical summary</a></li>
+<li><a href="#fit-numerical-summary_1">Fit numerical summary</a></li>
+</ul>
+</li>
+<li><a href="#transient-3">Transient 3</a><ul>
+<li><a href="#fit-graphical-summary_2">Fit graphical summary</a></li>
+<li><a href="#fit-numerical-summary_2">Fit numerical summary</a></li>
+</ul>
+</li>
+<li><a href="#transient-4">Transient 4</a><ul>
+<li><a href="#fit-graphical-summary_3">Fit graphical summary</a></li>
+<li><a href="#fit-numerical-summary_3">Fit numerical summary</a></li>
+</ul>
+</li>
+<li><a href="#transient-5">Transient 5</a><ul>
+<li><a href="#fit-graphical-summary_4">Fit graphical summary</a></li>
+<li><a href="#fit-numerical-summary_4">Fit numerical summary</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#tau-vs-kappa">tau vs kappa</a><ul>
+<li><a href="#tau-vs-kappa-using-the-min-fura-value">tau vs kappa  using the min [Fura] value</a><ul>
+<li><a href="#fit-graphical-summary_5">Fit graphical summary</a></li>
+<li><a href="#fit-numerical-summary_5">Fit numerical summary</a></li>
+</ul>
+</li>
+<li><a href="#tau-vs-kappa-using-the-mean-fura-value">tau vs kappa  using the mean [Fura] value</a><ul>
+<li><a href="#fit-graphical-summary_6">Fit graphical summary</a></li>
+<li><a href="#fit-numerical-summary_6">Fit numerical summary</a></li>
+</ul>
+</li>
+<li><a href="#tau-vs-kappa-using-the-max-fura-value">tau vs kappa  using the max [Fura] value</a><ul>
+<li><a href="#fit-graphical-summary_7">Fit graphical summary</a></li>
+<li><a href="#fit-numerical-summary_7">Fit numerical summary</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#rss-per-dof-standard-error-of-tau-and-lag-1-residual-correlation-for-each-good-tansient">RSS per DOF, standard error of tau and lag 1 residual correlation for each 'good' tansient</a></li>
+</ul>
+</div>
+<p>The baseline length is: 7.</p>
+<p><strong>When fitting tau against kappa_Fura only the transients for which the fit RSS and the lag 1 auto-correlation of the residuals were small enough, giving an overall probability of false negative of 0.02, were kept</strong> (see the numerical summary associated with each transient).</p>
+<p>The good transients are: 1, 3, 4, 5.</p>
+<h1 id="loading-curve">Loading curve</h1>
+<p>The time at which the 'good' transients were recorded appear in red.</p>
+<p><img alt="DA_130524_E7_aba_loading_curve" src="DA_130524_E7_aba_loading_curve.png" /></p>
+<h1 id="transients">Transients</h1>
+<p>On each graph, the residuals appear on top.
+<strong>Under the null hypothesis</strong>, if the monoexponential fit is correct <strong>they should be centered on 0 and have a SD close to 1</strong> (not exactly 1 since parameters were obtained through the fitting procedure form the data.</p>
+<p>The estimated [Ca2+] appears on the second row. The estimate is show in black together with pointwise 95% confidence intervals. The fitted curve appears in red. <strong>The whole transient is not fitted</strong>, only a portion of it is: a portion of the baseline made of 7 points and the decay phase starting at the time where the Delta[Ca2+] has reached 50% of its peak value.</p>
+<p>The time appearing on the abscissa is the time from the beginning of the experiment.</p>
+<h2 id="transient-1">Transient 1</h2>
+<p><strong>Transient 1 is 'good'.</strong></p>
+<h3 id="fit-graphical-summary">Fit graphical summary</h3>
+<p><img alt="DA_130524_E7_aba_RatioFit_s1" src="DA_130524_E7_aba_RatioFit_s1.png" /></p>
+<h3 id="fit-numerical-summary">Fit numerical summary</h3>
+<blockquote>
+<p>nobs = 186</p>
+<p>number of degrees of freedom = 183</p>
+<p>baseline length = 7</p>
+<p>fit started from point 21</p>
+<p>estimated baseline 0.117889 and standard error 0.00380029</p>
+<p>estimated delta 0.119577 and standard error 0.0224336</p>
+<p>estimated tau 2.34616 and standard error 0.610352</p>
+<p>residual sum of squares: 162.778</p>
+<p>RSS per degree of freedom: 0.889498</p>
+<p>Probability of observing a larger of equal RSS per DOF under the null hypothesis: 0.856217</p>
+<p>Lag 1 residuals auto-correlation: 0.129</p>
+<p>Pr[Lag 1 auto-corr. &gt; 0.129] = 0.040</p>
+</blockquote>
+<h2 id="transient-2">Transient 2</h2>
+<p><strong>Transient 2 is a 'bad'.</strong></p>
+<h3 id="fit-graphical-summary_1">Fit graphical summary</h3>
+<p><img alt="DA_130524_E7_aba_RatioFit_s2" src="DA_130524_E7_aba_RatioFit_s2.png" /></p>
+<h3 id="fit-numerical-summary_1">Fit numerical summary</h3>
+<blockquote>
+<p>nobs = 178</p>
+<p>number of degrees of freedom = 175</p>
+<p>baseline length = 7</p>
+<p>fit started from point 29</p>
+<p>estimated baseline 0.093706 and standard error 0.00102631</p>
+<p>estimated delta 0.0571377 and standard error 0.0187565</p>
+<p>estimated tau 0.00175563 and standard error 0</p>
+<p>residual sum of squares: 300.33</p>
+<p>RSS per degree of freedom: 1.71617</p>
+<p>Probability of observing a larger of equal RSS per DOF under the null hypothesis: 1.16965e-08</p>
+<p>WARNING: THE FIT IS NOT GOOD!</p>
+<p>Lag 1 residuals auto-correlation: 0.715</p>
+<p>Pr[Lag 1 auto-corr. &gt; 0.715] = 0.000</p>
+</blockquote>
+<h2 id="transient-3">Transient 3</h2>
+<p><strong>Transient 3 is 'good'.</strong></p>
+<h3 id="fit-graphical-summary_2">Fit graphical summary</h3>
+<p><img alt="DA_130524_E7_aba_RatioFit_s3" src="DA_130524_E7_aba_RatioFit_s3.png" /></p>
+<h3 id="fit-numerical-summary_2">Fit numerical summary</h3>
+<blockquote>
+<p>nobs = 180</p>
+<p>number of degrees of freedom = 177</p>
+<p>baseline length = 7</p>
+<p>fit started from point 27</p>
+<p>estimated baseline 0.068086 and standard error 0.000697476</p>
+<p>estimated delta 0.0820713 and standard error 0.0033251</p>
+<p>estimated tau 2.54379 and standard error 0.158424</p>
+<p>residual sum of squares: 175.644</p>
+<p>RSS per degree of freedom: 0.992342</p>
+<p>Probability of observing a larger of equal RSS per DOF under the null hypothesis: 0.514664</p>
+<p>Lag 1 residuals auto-correlation: 0.014</p>
+<p>Pr[Lag 1 auto-corr. &gt; 0.014] = 0.373</p>
+</blockquote>
+<h2 id="transient-4">Transient 4</h2>
+<p><strong>Transient 4 is 'good'.</strong></p>
+<h3 id="fit-graphical-summary_3">Fit graphical summary</h3>
+<p><img alt="DA_130524_E7_aba_RatioFit_s4" src="DA_130524_E7_aba_RatioFit_s4.png" /></p>
+<h3 id="fit-numerical-summary_3">Fit numerical summary</h3>
+<blockquote>
+<p>nobs = 172</p>
+<p>number of degrees of freedom = 169</p>
+<p>baseline length = 7</p>
+<p>fit started from point 35</p>
+<p>estimated baseline 0.0641069 and standard error 0.00055206</p>
+<p>estimated delta 0.0632209 and standard error 0.00193422</p>
+<p>estimated tau 2.94258 and standard error 0.15628</p>
+<p>residual sum of squares: 172.22</p>
+<p>RSS per degree of freedom: 1.01905</p>
+<p>Probability of observing a larger of equal RSS per DOF under the null hypothesis: 0.416741</p>
+<p>Lag 1 residuals auto-correlation: 0.093</p>
+<p>Pr[Lag 1 auto-corr. &gt; 0.093] = 0.099</p>
+</blockquote>
+<h2 id="transient-5">Transient 5</h2>
+<p><strong>Transient 5 is 'good'.</strong></p>
+<h3 id="fit-graphical-summary_4">Fit graphical summary</h3>
+<p><img alt="DA_130524_E7_aba_RatioFit_s5" src="DA_130524_E7_aba_RatioFit_s5.png" /></p>
+<h3 id="fit-numerical-summary_4">Fit numerical summary</h3>
+<blockquote>
+<p>nobs = 160</p>
+<p>number of degrees of freedom = 157</p>
+<p>baseline length = 7</p>
+<p>fit started from point 47</p>
+<p>estimated baseline 0.0582513 and standard error 0.000550247</p>
+<p>estimated delta 0.0436697 and standard error 0.00109433</p>
+<p>estimated tau 3.96811 and standard error 0.220803</p>
+<p>residual sum of squares: 147.116</p>
+<p>RSS per degree of freedom: 0.937042</p>
+<p>Probability of observing a larger of equal RSS per DOF under the null hypothesis: 0.702681</p>
+<p>Lag 1 residuals auto-correlation: -0.139</p>
+<p>Pr[Lag 1 auto-corr. &gt; -0.139] = 0.958</p>
+</blockquote>
+<h1 id="tau-vs-kappa">tau vs kappa</h1>
+<p>Since the [Fura] changes during a transient (and it can change a lot during the early transients), the <em>unique</em> value to use as '[Fura]' is not obvious. We therefore perform 3 fits: one using the minimal value, one using the mean and one using the maximal value.</p>
+<p>The observed tau (shown in red) are displayed with a 95% confidence interval that results from the fitting procedure and <em>is</em> therefore <em>meaningful only if the fit is correct</em>!</p>
+<p>No serious attempt at quantifying the precision of [Fura] and therefore kappa_Fura has been made since the choice of which [Fura] to use has a larger effect and since the other dominating effect is often the certainty we can have that the saturating value (the [Fura] in the pipette) has been reached.</p>
+<p>The straight line in black is the result of a <em>weighted</em> linear regression. The blue dotted lines correspond to the limits of <em>pointwise 95% confidence intervals</em>.</p>
+<h2 id="tau-vs-kappa-using-the-min-fura-value">tau vs kappa  using the min [Fura] value</h2>
+<h3 id="fit-graphical-summary_5">Fit graphical summary</h3>
+<p><img alt="DA_130524_E7_aba_tau_vs_min_kappa" src="DA_130524_E7_aba_tau_vs_min_kappa.png" /></p>
+<h3 id="fit-numerical-summary_5">Fit numerical summary</h3>
+<blockquote>
+<p>Best fit: tau = 1.77285 + 0.0121204 kappa_Fura</p>
+<p>Covariance matrix:</p>
+<p>[ +6.25250e-02, -5.32695e-04  </p>
+<p>-5.32695e-04, +5.36334e-06  ]</p>
+<p>Total sum of squares (TSS) = 28.742</p>
+<p>chisq (Residual sum of squares, RSS) = 1.35135</p>
+<p>Probability of observing a larger of equal RSS per DOF under the null hypothesis: 0.508812</p>
+<p>R squared (1-RSS/TSS) = 0.952983</p>
+<p>Estimated gamma/v with standard error: 82.5052 +/- 15.7645</p>
+<p>Estimates kappa_S with standard error (using error propagation): 145.269 +/- 34.7377</p>
+<p>kappa_S confidence intervals based on parametric bootstrap</p>
+<p>0.95 CI for kappa_S: [76.4857,294.925]</p>
+<p>0.99 CI for kappa_S: [60.213,387.768]</p>
+</blockquote>
+<h2 id="tau-vs-kappa-using-the-mean-fura-value">tau vs kappa  using the mean [Fura] value</h2>
+<h3 id="fit-graphical-summary_6">Fit graphical summary</h3>
+<p><img alt="DA_130524_E7_aba_tau_vs_mean_kappa" src="DA_130524_E7_aba_tau_vs_mean_kappa.png" /></p>
+<h3 id="fit-numerical-summary_6">Fit numerical summary</h3>
+<blockquote>
+<p>Best fit: tau = 1.75973 + 0.0115694 kappa_Fura</p>
+<p>Covariance matrix:</p>
+<p>[ +6.31837e-02, -5.09259e-04  </p>
+<p>-5.09259e-04, +4.84153e-06  ]</p>
+<p>Total sum of squares (TSS) = 28.742</p>
+<p>chisq (Residual sum of squares, RSS) = 1.09542</p>
+<p>Probability of observing a larger of equal RSS per DOF under the null hypothesis: 0.578272</p>
+<p>R squared (1-RSS/TSS) = 0.961888</p>
+<p>Estimated gamma/v with standard error: 86.4347 +/- 16.4387</p>
+<p>Estimates kappa_S with standard error (using error propagation): 151.102 +/- 36.1781</p>
+<p>kappa_S confidence intervals based on parametric bootstrap</p>
+<p>0.95 CI for kappa_S: [79.6982,307.537]</p>
+<p>0.99 CI for kappa_S: [66.0618,408.438]</p>
+</blockquote>
+<h2 id="tau-vs-kappa-using-the-max-fura-value">tau vs kappa  using the max [Fura] value</h2>
+<h3 id="fit-graphical-summary_7">Fit graphical summary</h3>
+<p><img alt="DA_130524_E7_aba_tau_vs_max_kappa" src="DA_130524_E7_aba_tau_vs_max_kappa.png" /></p>
+<h3 id="fit-numerical-summary_7">Fit numerical summary</h3>
+<blockquote>
+<p>Best fit: tau = 1.73889 + 0.011156 kappa_Fura</p>
+<p>Covariance matrix:</p>
+<p>[ +6.49455e-02, -4.98671e-04  </p>
+<p>-4.98671e-04, +4.49447e-06  ]</p>
+<p>Total sum of squares (TSS) = 28.742</p>
+<p>chisq (Residual sum of squares, RSS) = 1.05093</p>
+<p>Probability of observing a larger of equal RSS per DOF under the null hypothesis: 0.591281</p>
+<p>R squared (1-RSS/TSS) = 0.963436</p>
+<p>Estimated gamma/v with standard error: 89.6378 +/- 17.0342</p>
+<p>Estimates kappa_S with standard error (using error propagation): 154.87 +/- 37.406</p>
+<p>kappa_S confidence intervals based on parametric bootstrap</p>
+<p>0.95 CI for kappa_S: [80.7846,307.464]</p>
+<p>0.99 CI for kappa_S: [64.9674,401.518]</p>
+</blockquote>
+<h1 id="rss-per-dof-standard-error-of-tau-and-lag-1-residual-correlation-for-each-good-tansient">RSS per DOF, standard error of tau and lag 1 residual correlation for each 'good' tansient</h1>
+<p>4 out of 5 transients  were kept.</p>
+<p>sigma(tau): 0.610352, 0.158424, 0.15628, 0.220803</p>
+<p>Residual correlation at lag 1: 0.12867596516243548, 0.013762481798966482, 0.09274565592947634, -0.13870830732672906</p>
+<p>Probablity of a correlation at lag 1 smaller or equal than observed: 0.040000000000000036, 0.373, 0.09899999999999998, 0.958</p>
+<p>RSS/DOF: 0.889498, 0.992342, 1.01905, 0.937042</p>
